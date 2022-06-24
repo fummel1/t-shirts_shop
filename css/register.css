@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-weight: 400;
+    background: #fff;
+}
+
+a:hover {
+    transition: all 0.6s ease;
+    color: #ccc;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+header > .menu > ul {
+    background: #fafafa;
+    border: 1px solid silver;
+    padding: 25px 2%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+@media (max-width: 656px) {
+    header > .menu > ul {
+        background: #fafafa;
+        border: 1px solid silver;
+        padding: 25px 2%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    header > .menu > ul {
+        background: #fafafa;
+        border: 1px solid silver;
+        padding: 25px 2%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 521px) {
+    header > .menu > ul {
+        background: #fafafa;
+        border: 1px solid silver;
+        padding: 25px 2%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 821px) {
+    header > .menu > ul {
+        display: none;
+    }
+}
+
+header .menu-m {
+    display: flex;
+    justify-content: right;
+    padding: 20px 20px;
+    font-size: 25px;
+}
+
+@media (min-width: 822px) {
+    header .menu-m {
+        display: none;
+        justify-content: right;
+        padding: 20px 20px;
+        font-size: 25px;
+    }
+}
+
+/* @media (max-width: 822px) {
+    header .menu {
+        display: none;
+        justify-content: right;
+        padding: 20px 20px;
+        font-size: 25px;
+    }
+} */
+
+@media (min-width: 822px) {
+    header .menu-mobile {
+        display: none!important;
+        /* justify-content: center; 
+         text-align: center;
+        width: 100%;
+        margin-top: 22px;
+        font-size: 25px;  */
+    }
+}
+
+@media (max-width: 821px) {
+    header .menu-mobile {
+        display: none;
+
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    header .menu-mobile li {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 822px) {
+    header .menu-m {
+        display: none;
+        justify-content: right;
+        padding: 20px 20px;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 821px) {
+    header .menu-mobile {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        margin-top: 22px;
+        font-size: 25px;
+    }
+}
+
+h1 {
+    width: 80%;
+    margin: 20px 10% 0;
+}
+
+output-of-articles a {
+     width: 80%;
+    margin: 0 10%;
+    font-weight: 500;
+    /* font-size: 30px; */
+} 
+
+output-of-articles .avtor span{
+    font-weight: 800;
+} 
+
+output-of-articles .avtor {
+    font-weight: 500;
+}
+
+output-of-articles a {
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fec008;
+    /* background: rgb(21, 127, 79); */
+    color: #42410c;
+    transition: transform 500ms ease;
+    display: block;
+    width: 65px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+output-of-articles a:hover {
+    transform: scale(1.1);
+    color: #42410c;
+}
+
+output-of-articles h3, h2 {
+    width: 80%;
+    margin: 10px 10% 0;
+}
+
+output-of-articles p {
+    width: 80%;
+    margin: 0 10% 10px;
+    font-weight: 500;
+} 
+
+.comment {
+    width: 60%;
+    margin: 30px 10%;
+    background: #fec008;
+    padding: 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #42410c;
+}
+
+form {
+    /*margin: 30px 0;*/
+    /*display: block;*/
+    /*justify-content: center;*/
+    width: 80%;
+    margin: 30px 10% 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    resize: vertical;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form button {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fec008;
+    /* background: rgb(21, 127, 79); */
+    color: #42410c;
+    transition: transform 500ms ease;
+    display: block;
+}
+
+.error-mess {
+    color: #de7474;
+    margin: 10px 0;
+    font-weight: 600;
+    display: none;
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
